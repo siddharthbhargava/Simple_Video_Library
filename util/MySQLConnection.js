@@ -85,7 +85,7 @@ function createdbConnectionThread() {
 function createdbConnectionPool() {
 	if(enableConnectionPool) {
 		console.log("Creating connection pool");
-		for(var i=0;i<50;i++) {
+		for(var i=0;i<200;i++) {
 			queue[i] = createdbConnectionThread();
 		}
 		return queue;
